@@ -18,10 +18,10 @@ const setupInput = function (conn) {
 const handleUserInput = function (data) {
   // \u0003 maps to ctrl+c input
   if (data === '\u0003') process.exit();
-  if (stdin === 'w' ) connection.write("Move: up");
-  if (stdin === 'a' ) connection.write("Move: left");
-  if (stdin === 's' ) connection.write("Move: down");
-  if (stdin === 'd' ) connection.write("Move: right");
+  if (data === 'w' ) connection.write("Move: up");
+  if (data === 'a' ) connection.write("Move: left");
+  if (data === 's' ) connection.write("Move: down");
+  if (data === 'd' ) connection.write("Move: right");
 };
 
 module.exports = { setupInput };

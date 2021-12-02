@@ -23,10 +23,10 @@ const handleUserInput = function (data) {
   if (data === 's' ) connection.write("Move: down");
   if (data === 'd' ) connection.write("Move: right");
 
-  if (stdin === 'z' ) connection.write("Say: KamehameHAAA");
-  if (stdin === 'x' ) connection.write("Say: Gotta catch 'em all!");
-  if (stdin === 'c' ) connection.write("Say: Gomu gomu nooo EAT");
-  if (stdin === 'v' ) connection.write("Say: RAENGAN");
+  if (data === 'z' ) connection.write("Say: KamehameHAAA");
+  if (data === 'x' ) connection.write("Say: Gotta catch 'em all!");
+  if (data === 'c' ) connection.write("Say: Gomu gomu nooo EAT");
+  if (data === 'v' ) connection.write("Say: RAENGAN");
 };
 
 module.exports = { setupInput };

@@ -22,6 +22,11 @@ const handleUserInput = function (data) {
   if (data === 'a' ) connection.write("Move: left");
   if (data === 's' ) connection.write("Move: down");
   if (data === 'd' ) connection.write("Move: right");
+
+  if (stdin === 'z' ) connection.write("Say: KamehameHAAA");
+  if (stdin === 'x' ) connection.write("Say: Gotta catch 'em all!");
+  if (stdin === 'c' ) connection.write("Say: Gomu gomu nooo EAT");
+  if (stdin === 'v' ) connection.write("Say: RAENGAN");
 };
 
 module.exports = { setupInput };
